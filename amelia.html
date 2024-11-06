@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>amelia site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.amelia.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="mat-typography">
+
+<header>
+  <h1>Hello, World!</h1>
+  <p>My name is amelia. Welcome to my portfolio.</p>
+
+  <div id="avatarconatiner">
+    <img id="chicky" src="imgs/eggy.png" alt="chicken pixel art">
+    <img id="chicky2" src="imgs/eggy.png" alt="chicken pixel art">
+    <img id="chicky3" src="imgs/eggy.png" alt="chicken pixel art">
+    <img id="chicky4" src="imgs/eggy.png" alt="chicken pixel art">
+    <img id="chicky5" src="imgs/eggy.png" alt="chicken pixel art">
+
+    <img id="avatar" src="imgs/me.png" alt="avatar of me">
+  </div>
+  <div id="naver">
+    <p>Select an Option: </p>
+    <nav>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">CV</a>
+      <a href="art.html">Art!</a>
+    </nav>
+  </div>
+
+</header>
+
+</body>
+</html>
+
+<script>
+  function hatch(img){
+    const hatchedsrc = 'imgs/chicky.png';
+    img.src = hatchedsrc;
+    img.style.transform = 'translateY(-20px)'
+
+    setTimeout(() => {
+      img.style.transform = 'translateY(0)'; 
+    }, 300); 
+  }
+
+  document.getElementById('avatar').addEventListener('click', function() {
+   this.style.transform = 'translateY(-20px)'
+   this.src = 'imgs/wave.png'
+
+    setTimeout(() => {
+      this.style.transform = 'translateY(0)'; 
+      this.src = 'imgs/me.png'
+    }, 300); 
+  });
+
+  document.getElementById('chicky').addEventListener('click', function() {
+    hatch(this);
+  });
+
+  document.getElementById('chicky2').addEventListener('click', function() {
+    hatch(this);
+  });
+
+  document.getElementById('chicky3').addEventListener('click', function() {
+    hatch(this);
+  });
+
+  document.getElementById('chicky4').addEventListener('click', function() {
+    hatch(this);
+  });
+
+  document.getElementById('chicky5').addEventListener('click', function() {
+    hatch(this);
+  });
+</script>

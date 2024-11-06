@@ -1,0 +1,183 @@
+body{
+    font-family: "Silkscreen", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    color: white;
+    margin:0;
+    background-image: linear-gradient(#69676f5e 0%,#172f428e), url('imgs/galaxy2.jpeg');
+    background-size: 100%;
+    display:grid;
+}
+
+header{
+    background-color: black;
+    color:#ffdc9c;
+    line-height: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+  
+#projhead, #resumehead, #funhead{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    color:#b5c3f3;
+}
+
+
+#avatarcontainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+#chicky, #chicky2, #chicky3, #chicky4, #chicky5{
+    position: absolute;
+    width: 120px;
+    left: -20%;
+    margin-top: 50px;
+}
+
+#chicky{
+    animation: walking 20s infinite ;
+    animation-delay: 3s;
+}
+
+#chicky2{
+    animation: walking 20s infinite;
+    animation-delay: 6s;
+
+}
+
+#chicky3{
+    animation: walking 20s infinite;
+    animation-delay: 9s;
+
+}
+
+#chicky4{
+    animation: walking 20s infinite;
+    animation-delay: 12s;
+
+}
+
+#chicky5{
+    animation: walking 20s infinite;
+    animation-delay: 15s;
+
+}
+
+#avatar{
+    width: 100px;
+    position: absolute;
+    margin: 20px;
+    animation: walking 20s infinite ;
+}
+
+
+#naver{
+    margin-top: 150px;
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav a{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Silkscreen", sans-serif;
+    text-decoration: none;
+    color:#ffdc9c;
+}
+
+nav a:hover{
+    color:#b5c3f3;
+}
+
+.about{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 50px;
+}
+
+
+#nametag{
+    width: 400px;
+    z-index: 10;
+    margin-bottom: -550px;
+    margin-left: -200px;
+}
+
+#profile{
+    width: 300px;
+    border-style: solid;
+    border-width: 5px;
+    color:black
+}
+
+
+/* animations */
+
+@keyframes walking{
+    0%{
+        left: -20%;
+    }
+    50%{
+        left: 45%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+
+@keyframes walking2{
+    0%{
+        left: -20%;
+    }
+    100%{
+        left: 120%;
+    }
+}
+
+@keyframes colorchange {
+    0%{
+        border-color:#b5c3f3
+    }
+    50%{
+        border-color:#ffdc9c;
+    }
+    100%{
+        border-color:#b5c3f3
+    }
+  }
+
